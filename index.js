@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import metaversefile from 'metaversefile';
-import Planet from 'views/Planet'
-import RenderQueue from 'views/RenderQueue'
+import Planet from './views/Planet.js'
+import RenderQueue from './views/RenderQueue.js'
 const {useApp, useFrame, useLoaders, usePhysics, useCleanup} = metaversefile;
 
 const baseUrl = import.meta.url.replace(/(\/)[^\/\\]*$/, '$1');
