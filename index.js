@@ -14,7 +14,7 @@ import fragShaderNebulaMap from 'https://patriboz.github.io/procedural-planet/sh
 import shaderVertGlow from 'https://patriboz.github.io/procedural-planet/shaders/glow.vert.js'
 import shaderFragGlow from 'https://patriboz.github.io/procedural-planet/shaders/glow.frag.js'
 
-import vertShaderTexture from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
+import vertShaderTexture from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert.js'
 
 import seedrandom from 'https://patriboz.github.io/procedural-planet/lib/seedrandom.js'
 
