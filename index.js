@@ -16,7 +16,7 @@ import shaderFragGlow from 'https://patriboz.github.io/procedural-planet/shaders
 
 import vertShaderTexture from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert.js'
 
-import sr from 'https://patriboz.github.io/procedural-planet/lib/seedrandom.js'
+import {prng_arc4} from '//cdn.jsdelivr.net/npm/esm-seedrandom/esm/arc4.min.mjs'
 
 
 import RenderQueue from 'https://patriboz.github.io/procedural-planet/views/RenderQueue.js'
@@ -24,12 +24,7 @@ const {useApp, useFrame, useLoaders, usePhysics, useCleanup} = metaversefile;
 
 const baseUrl = import.meta.url.replace(/(\/)[^\/\\]*$/, '$1');
 
-sr([], Math);
-/*(
-  [],     // pool: entropy pool starts empty
-  Math    // math: package containing random, pow, and seedrandom
-);
- */
+
 class Biome {
 
   constructor() {
@@ -1861,8 +1856,8 @@ class Planet {
   }
 
   initSeed() {
-    window.rng = seedrandom(this.seedString);
-    console.log(seedrandom);
+    window.rng = prng_arc4(this.seedString); //seedrandom(this.seedString);
+    
     console.log(window.rng);
   }
 
