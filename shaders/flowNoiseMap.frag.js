@@ -1,3 +1,4 @@
+const fragShaderNoiseMap = `
 //
 // GLSL textureless classic 3D noise "cnoise",
 // with an RSL-style periodic variant "pnoise".
@@ -278,3 +279,5 @@ void main() {
 
 
 }
+`;
+export default fragShaderNoiseMap;

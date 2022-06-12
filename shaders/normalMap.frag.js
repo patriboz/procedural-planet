@@ -1,4 +1,4 @@
-
+const fragShaderNormalMap = `
 varying vec2 vUv;
 uniform float resolution;
 uniform float waterLevel;
@@ -126,3 +126,5 @@ void main() {
 
   gl_FragColor = vec4(N, 1.0);
 }
+`;
+export default fragShaderNormalMap;

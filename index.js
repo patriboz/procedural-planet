@@ -1,24 +1,21 @@
 import * as THREE from 'three';
 import metaversefile from 'metaversefile';
 
-import shaderVertAtmosphere from 'https://patriboz.github.io/procedural-planet/shaders/planet.vert'
-import shaderFragAtmosphere from 'https://patriboz.github.io/procedural-planet/shaders/atmos.frag'
-import vertShaderNoiseMap from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
-import fragShaderNoiseMap from 'https://patriboz.github.io/procedural-planet/shaders/flowNoiseMap.frag'
-import vertShaderTextureMap from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
-import fragShaderTextureMap from 'https://patriboz.github.io/procedural-planet/shaders/textureMap.frag'
-import vertShaderNormalMap from 'https://patriboz.github.io/procedural-planet/shaders/normalMap.vert'
-import fragShaderNormalMap from 'https://patriboz.github.io/procedural-planet/shaders/normalMap.frag'
-import vertShaderRoughnessMap from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
-import fragShaderRoughnessMap from 'https://patriboz.github.io/procedural-planet/shaders/roughnessMap.frag'
-import vertShaderCloudMap from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
-import fragShaderCloudMap from 'https://patriboz.github.io/procedural-planet/shaders/cloudMap.frag'
-import vertShaderStarMap from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
-import fragShaderStarMap from 'https://patriboz.github.io/procedural-planet/shaders/stars.frag'
-import vertShaderNebulaMap from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
-import fragShaderNebulaMap from 'https://patriboz.github.io/procedural-planet/shaders/nebula.frag'
-import shaderVertGlow from 'https://patriboz.github.io/procedural-planet/shaders/glow.vert'
-import shaderFragGlow from 'https://patriboz.github.io/procedural-planet/shaders/glow.frag'
+import shaderVertAtmosphere from 'https://patriboz.github.io/procedural-planet/shaders/planet.vert.js'
+import shaderFragAtmosphere from 'https://patriboz.github.io/procedural-planet/shaders/atmos.frag.js'
+import fragShaderNoiseMap from 'https://patriboz.github.io/procedural-planet/shaders/flowNoiseMap.frag.js'
+import fragShaderTextureMap from 'https://patriboz.github.io/procedural-planet/shaders/textureMap.frag.js'
+import vertShaderNormalMap from 'https://patriboz.github.io/procedural-planet/shaders/normalMap.vert.js'
+import fragShaderNormalMap from 'https://patriboz.github.io/procedural-planet/shaders/normalMap.frag.js'
+import fragShaderRoughnessMap from 'https://patriboz.github.io/procedural-planet/shaders/roughnessMap.frag.js'
+import fragShaderCloudMap from 'https://patriboz.github.io/procedural-planet/shaders/cloudMap.frag.js'
+import fragShaderStarMap from 'https://patriboz.github.io/procedural-planet/shaders/stars.frag.js'
+import fragShaderNebulaMap from 'https://patriboz.github.io/procedural-planet/shaders/nebula.frag.js'
+import shaderVertGlow from 'https://patriboz.github.io/procedural-planet/shaders/glow.vert.js'
+import shaderFragGlow from 'https://patriboz.github.io/procedural-planet/shaders/glow.frag.js'
+
+import vertShaderTexture from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
+
 import seedrandom from 'https://patriboz.github.io/procedural-planet/lib/seedrandom.js'
 
 
@@ -588,7 +585,7 @@ class NoiseMap extends Map {
           mixScale: {type: "f", value: 0},
           doesRidged: {type: "f", value: 0}
         },
-        vertexShader: vertShaderNoiseMap,
+        vertexShader: vertShaderTexture,
         fragmentShader: fragShaderNoiseMap,
         transparent: true,
         depthWrite: false
@@ -641,7 +638,7 @@ class TextureMap extends Map {
           heightMap: {type: "t", value: new THREE.Texture()},
           moistureMap: {type: "t", value: new THREE.Texture()}
         },
-        vertexShader: vertShaderTextureMap,
+        vertexShader: vertShaderTexture,
         fragmentShader: fragShaderTextureMap,
         transparent: true,
         depthWrite: false
@@ -735,7 +732,7 @@ class RoughnessMap extends Map {
           waterLevel: {type: "f", value: 0},
           heightMap: {type: "t", value: new THREE.Texture()}
         },
-        vertexShader: vertShaderRoughnessMap,
+        vertexShader: vertShaderTexture,
         fragmentShader: fragShaderRoughnessMap,
         transparent: true,
         depthWrite: false
@@ -783,7 +780,7 @@ class CloudMap extends Map {
           resMix: {type: "f", value: 0},
           mixScale: {type: "f", value: 0}
         },
-        vertexShader: vertShaderCloudMap,
+        vertexShader: vertShaderTexture,
         fragmentShader: fragShaderCloudMap,
         transparent: true,
         depthWrite: false
@@ -981,7 +978,7 @@ class StarMap extends Map {
           mixScale: {type: "f", value: 0},
           nebulaeMap: {type: "t", value: new THREE.Texture()}
         },
-        vertexShader: vertShaderStarMap,
+        vertexShader: vertShaderTexture,
         fragmentShader: fragShaderStarMap,
         transparent: true,
         depthWrite: false
@@ -1143,7 +1140,7 @@ class NebulaMap extends Map {
           mixScale: {type: "f", value: 0},
           nebulaeMap: {type: "t", value: new THREE.Texture()}
         },
-        vertexShader: vertShaderNebulaMap,
+        vertexShader: vertShaderTexture,
         fragmentShader: fragShaderNebulaMap,
         transparent: true,
         depthWrite: false

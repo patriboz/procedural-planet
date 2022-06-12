@@ -1,3 +1,4 @@
+const fragShaderNebulaMap = `
 //
 // GLSL textureless classic 3D noise "cnoise",
 // with an RSL-style periodic variant "pnoise".
@@ -511,3 +512,5 @@ void main() {
 
 	gl_FragColor = nebula;
 }
+`;
+export default fragShaderNebulaMap;

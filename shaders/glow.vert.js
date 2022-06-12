@@ -1,3 +1,4 @@
+const shaderVertGlow = `
 uniform vec3 viewVector;
 uniform float c;
 uniform float p;
@@ -11,3 +12,5 @@ void main()
 
   gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 }
+`;
+export default shaderVertGlow;

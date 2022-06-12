@@ -1,4 +1,4 @@
-
+const fragShaderRoughnessMap = `
 varying vec2 vUv;
 uniform float resolution;
 uniform sampler2D heightMap;
@@ -26,3 +26,5 @@ void main() {
 
   gl_FragColor = vec4(vec3(roughness), 1.0);
 }
+`;
+export default fragShaderRoughnessMap;
