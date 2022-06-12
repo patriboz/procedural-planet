@@ -933,10 +933,10 @@ class Clouds {
   computeGeometry(geometry) {
   	// geometry.makeGroups();
   	geometry.computeVertexNormals()
-  	geometry.computeFaceNormals();
-  	geometry.computeMorphNormals();
-  	geometry.computeBoundingSphere();
-  	geometry.computeBoundingBox();
+  	// geometry.computeFaceNormals();
+  	// geometry.computeMorphNormals();
+  	// geometry.computeBoundingSphere();
+  	// geometry.computeBoundingBox();
   	// geometry.computeLineDistances();
 
   	geometry.verticesNeedUpdate = true;
@@ -1095,10 +1095,10 @@ class Stars {
   computeGeometry(geometry) {
   	// geometry.makeGroups();
   	geometry.computeVertexNormals()
-  	geometry.computeFaceNormals();
-  	geometry.computeMorphNormals();
-  	geometry.computeBoundingSphere();
-  	geometry.computeBoundingBox();
+  	// geometry.computeFaceNormals();
+  	// geometry.computeMorphNormals();
+  	// geometry.computeBoundingSphere();
+  	// geometry.computeBoundingBox();
   	// geometry.computeLineDistances();
 
   	geometry.verticesNeedUpdate = true;
@@ -1264,10 +1264,10 @@ class Nebula {
   computeGeometry(geometry) {
   	// geometry.makeGroups();
   	geometry.computeVertexNormals()
-  	geometry.computeFaceNormals();
-  	geometry.computeMorphNormals();
-  	geometry.computeBoundingSphere();
-  	geometry.computeBoundingBox();
+  	// geometry.computeFaceNormals();
+  	// geometry.computeMorphNormals();
+  	// geometry.computeBoundingSphere();
+  	// geometry.computeBoundingBox();
   	// geometry.computeLineDistances();
 
   	geometry.verticesNeedUpdate = true;
