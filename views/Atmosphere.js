@@ -1,6 +1,6 @@
 import * as THREE from 'three'
-import shaderVert from '../shaders/planet.vert'
-import shaderFrag from '../shaders/atmos.frag'
+import shaderVert from 'https://patriboz.github.io/procedural-planet/shaders/planet.vert'
+import shaderFrag from 'https://patriboz.github.io/procedural-planet/shaders/atmos.frag'
 
 class Atmosphere {
 

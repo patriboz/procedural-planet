@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import SunTexture from './SunTexture.js'
+import SunTexture from 'https://patriboz.github.io/procedural-planet/views/SunTexture.js'
 
 export default class Sun {
 

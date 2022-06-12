@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import CloudMap from './CloudMap.js'
+import CloudMap from 'https://patriboz.github.io/procedural-planet/views/CloudMap.js'
 
 
 class Clouds {

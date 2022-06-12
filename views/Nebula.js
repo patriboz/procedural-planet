@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import NebulaMap from './NebulaMap.js'
+import NebulaMap from 'https://patriboz.github.io/procedural-planet/views/NebulaMap.js'
 
 export default class Nebula {
 

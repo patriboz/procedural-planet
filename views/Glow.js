@@ -1,6 +1,6 @@
 import * as THREE from 'three'
-import shaderVert from '../shaders/glow.vert'
-import shaderFrag from '../shaders/glow.frag'
+import shaderVert from 'https://patriboz.github.io/procedural-planet/shaders/glow.vert'
+import shaderFrag from 'https://patriboz.github.io/procedural-planet/shaders/glow.frag'
 
 class Glow {
 

@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import StarMap from './StarMap.js'
+import StarMap from 'https://patriboz.github.io/procedural-planet/views/StarMap.js'
 
 export default class Stars {
 

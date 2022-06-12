@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import vertShader from '../shaders/texture.vert'
-import fragShader from '../shaders/textureMap.frag'
-import Map from './Map.js'
+import vertShader from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert'
+import fragShader from 'https://patriboz.github.io/procedural-planet/shaders/textureMap.frag'
+import Map from 'https://patriboz.github.io/procedural-planet/views/Map.js'
 
 class TextureMap extends Map {
 

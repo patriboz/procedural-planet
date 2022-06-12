@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import vertShader from '../shaders/normalMap.vert'
-import fragShader from '../shaders/normalMap.frag'
-import Map from './Map.js'
+import vertShader from 'https://patriboz.github.io/procedural-planet/shaders/normalMap.vert'
+import fragShader from 'https://patriboz.github.io/procedural-planet/shaders/normalMap.frag'
+import Map from 'https://patriboz.github.io/procedural-planet/views/Map.js'
 
 class NormalMap extends Map{
 
