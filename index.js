@@ -16,7 +16,7 @@ import shaderFragGlow from 'https://patriboz.github.io/procedural-planet/shaders
 
 import vertShaderTexture from 'https://patriboz.github.io/procedural-planet/shaders/texture.vert.js'
 
-import {seedrandom} from 'https://patriboz.github.io/procedural-planet/lib/seedrandom.js'
+import 'https://patriboz.github.io/procedural-planet/lib/seedrandom.js'
 
 
 import RenderQueue from 'https://patriboz.github.io/procedural-planet/views/RenderQueue.js'
